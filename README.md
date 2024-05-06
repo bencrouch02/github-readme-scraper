@@ -1,28 +1,41 @@
-﻿# github-readme-scraper
+﻿# GitHub README Scraper
 
 ![image](https://github.com/bencrouch02/github-readme-scraper/assets/131415549/9adb876b-5a51-4c31-988a-b75f1f0295b6)
 
 ## Description
 
-This project is a proof of concept for a GitHub README scraper developed using Node.js. It employs axios for making HTTP requests and cheerio for parsing HTML, allowing it to extract the contents of README files directly from GitHub URLs without utilizing GitHub's API. The scraper takes a URL, fetches the README.md file, and parses its Markdown content to display it in a readable format.
+This project is a proof of concept for a GitHub README scraper developed using Node.js. The project utilizes GitHub's API to dynamically pull README files from any public GitHub repository. Developed using Node.js, this version uses the Octokit library to make authenticated HTTP requests to GitHub's API, allowing for efficient access to GitHub's resources.
 
-The primary purpose of this project is to demonstrate the feasibility of dynamically pulling project documentation to keep content fresh and updated, particularly for use in personal portfolio websites where showcasing up-to-date project details is crucial.
+The primary purpose of this project is to demonstrate the feasibility of using GitHub's API to dynamically pull project documentation, keeping the content fresh and updated. This functionality is particularly useful for personal portfolio websites, ensuring that project details are always current without manual updates.
 
 ## Technical Goals
 
-- **Showcase Node.js capabilities**: Demonstrate proficiency in using Node.js along with axios and cheerio to handle web scraping and HTML parsing.
-- **Enhance portfolio functionality**: Provide a dynamic and self-updating portfolio that reduces redundancy and ensures consistency across platforms.
-- **Engage potential employers and collaborators**: Offer an up-to-date, detailed view of my academic and personal projects in an easily accessible format.
+- **Showcase Node.js and GitHub API integration**: Demonstrate proficiency in using Node.js with the GitHub API via the Octokit library to fetch repository data.
+- **Enhance portfolio functionality**: Provide a dynamic, self-updating portfolio that showcases real-time data directly from GitHub, reducing redundancy and ensuring consistency.
+- **Engage potential employers and collaborators**: Offer an up-to-date, detailed view of academic and personal projects in an easily accessible and dynamically updated format.
 
 ## Installation
 
-To run the `scraper.js` file, you need to have Node.js installed on your machine. Here are the generic installation instructions:
+To run this project, you need to have Node.js installed on your machine. Follow these steps to set up and run the project:
 
-1. Clone the repository.
-2. Navigate to the directory where the `scraper.js` file is located using the `cd` command.
-3. Run the `scraper.js` file using the following command:
-   ```
-   node scraper.js
-   ```
-4. Open http://localhost:3000/ in the browser.
-5. Enter the URL for a public repository.
+1. **Clone the repository**:
+2. **Navigate to the directory**:
+3. **Install dependencies**:
+4. **Set up the .env file**:
+
+- Create a `.env` file in the root directory.
+- Add `GITHUB_TOKEN=your_github_api_token_here` to the file. Ensure you have generated a personal access token from GitHub with the appropriate scopes.
+
+5. **Run the application**:
+
+- Use the command: `node scraper.js`
+
+6. **Interact with the application**:
+
+- Open http://localhost:3000/ in your browser.
+- Enter a GitHub username to see a list of their repositories.
+- Click on any repository to view its README file.
+
+## How it Works
+
+Upon running the application and navigating to the main page, you are prompted to enter a GitHub username. The system then fetches a list of all repositories associated with that username. Each repository is listed with a link to view its README file, which is rendered in HTML format using the data fetched via GitHub's API.

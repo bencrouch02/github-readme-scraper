@@ -55,6 +55,12 @@ img {
     height: auto;
 }
 
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 /* Code block styling */
 pre {
     background-color: grey;
