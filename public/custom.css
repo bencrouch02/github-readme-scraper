@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the main article container */
+article.markdown-body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Headings styling */
+h1,
+h2,
+h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+ul, ol {
+    margin-left: 30px;
+
+}
+
+h1.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Paragraph styling */
+p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Link styling */
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Code block styling */
+pre {
+    background-color: grey;
+    padding: 10px;
+    overflow-x: auto;
+    color: white;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+}
+
+/* Hide the SVG icon by default */
+.anchor .octicon {
+    display: none;
+}
