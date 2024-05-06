@@ -1,6 +1,8 @@
 ﻿# GitHub README Scraper
 
-![image](https://github.com/bencrouch02/github-readme-scraper/assets/131415549/9adb876b-5a51-4c31-988a-b75f1f0295b6)
+![image](https://github.com/bencrouch02/github-readme-scraper/assets/131415549/ad4526f8-f44a-4067-8a18-e83eac29882e)
+
+![image](https://github.com/bencrouch02/github-readme-scraper/assets/131415549/2b3bb384-6885-4839-ad97-aed80ec129ac)
 
 ## Description
 
